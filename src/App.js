@@ -8,6 +8,19 @@ function App() {
     <div className="App">
       <h1>Weather App</h1>
       <Weather />
+      <footer>
+        This project was coded by{" "}
+        <a href="https://victoriagarcia.netlify.app" target="_blank">
+          Victoria Garcia
+        </a>{" "}
+        and is{" "}
+        <a
+          href="https://github.com/fifth-monger/weather-react-w4"
+          target="_blank"
+        >
+          open-sourced
+        </a>
+      </footer>
     </div>
   );
 }
