@@ -10,13 +10,18 @@ function App() {
       <Weather />
       <footer>
         This project was coded by{" "}
-        <a href="https://victoriagarcia.netlify.app" target="_blank">
+        <a
+          href="https://victoriagarcia.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
           Victoria Garcia
         </a>{" "}
         and is{" "}
         <a
           href="https://github.com/fifth-monger/weather-react-w4"
           target="_blank"
+          rel="noreferrer"
         >
           open-sourced
         </a>
