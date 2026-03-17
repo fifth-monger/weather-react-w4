@@ -1,1 +1,26 @@
-
+:root {
+  --color-text-primary: #0d2b2b; /* city name, temp, main text */
+  --color-text-secondary: #2e7d7d;
+  --color-background: #e0f2f1;
+  --color-bg-headfoot: #b2dfdb;
+}
+.container {
+  border: 2px solid var(--color-background);
+  border-radius: 20px;
+  margin: 30px auto;
+  display: block;
+  padding: 0;
+  overflow: auto;
+  max-width: 700px;
+}
+.App header {
+  background-color: var(--color-bg-headfoot);
+  padding: 16px;
+}
+.App h1 {
+  margin: 0;
+}
+.App footer {
+  background-color: var(--color-bg-headfoot);
+  padding: 16px;
+}

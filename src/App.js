@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h1>Weather App</h1>
+        <header>
+          <h1>Weather App</h1>
+        </header>
         <Weather />
         <footer>
           This project was coded by{" "}

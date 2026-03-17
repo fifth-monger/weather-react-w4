@@ -1,4 +1,54 @@
+:root {
+  --color-text-primary: #0d2b2b; /* city name, temp, main text */
+  --color-text-secondary: #2e7d7d;
+  --color-background: #e0f2f1;
+  --color-bg-headfoot: #b2dfdb;
+}
 .Weather {
-  background-color: lightblue;
-  border: 1px solid darkblue;
+  background-color: var(--color-background);
+  padding: 16px;
+}
+.Weather form {
+  margin-bottom: 20px;
+}
+.Weather h1 {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 29px;
+}
+.Weather ul {
+  color: var(--color-text-secondary);
+  margin: 0;
+  padding: 0;
+}
+.Weather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+.Weather .secondary-text {
+  color: var(--color-text-primary);
+}
+
+.Weather .btn {
+  background-color: var(--color-text-secondary);
+  color: white;
+}
+.Weather img {
+  height: 58px;
+  width: 58px;
+  margin-right: 10px;
+}
+.Weather .temperature {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+}
+.Weather .unit {
+  font-size: 16px;
+  position: relative;
+  line-height: 1;
+  top: -32px;
+  margin-left: 5px;
 }
