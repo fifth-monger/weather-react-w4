@@ -17,7 +17,7 @@ export default function Weather(props) {
     <ThreeDots
       height="80"
       width="80"
-      color="blue"
+      color="orange"
       ariaLabel="tail-spin-loading"
       visible={true}
     />
