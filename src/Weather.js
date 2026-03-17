@@ -54,12 +54,5 @@ export default function Weather() {
     );
   } else {
     return form;
-    <ThreeDots
-      height="80"
-      width="80"
-      color="orange"
-      ariaLabel="tail-spin-loading"
-      visible={true}
-    />;
   }
 }
