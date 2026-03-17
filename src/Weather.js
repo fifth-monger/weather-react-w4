@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { ThreeDots } from "react-loader-spinner";
 
 export default function Weather() {
   const [city, setCity] = useState("");
