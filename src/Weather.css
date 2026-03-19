@@ -35,9 +35,9 @@
   background-color: var(--color-text-secondary);
   color: white;
 }
-.Weather img {
-  height: 58px;
-  width: 58px;
+.Weather canvas {
+  height: 54px;
+  width: 54px;
   margin-right: 10px;
 }
 .Weather .temperature {
