@@ -1,53 +1,85 @@
 :root {
-  --color-text-primary: #0d2b2b; /* city name, temp, main text */
-  --color-text-secondary: #2e7d7d;
-  --color-background: #e0f2f1;
-  --color-bg-headfoot: #b2dfdb;
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #2f7d7d;
+  --color-background: #1a4a4a;
+  --color-bg-headfoot: #0d2b2b;
 }
+
 .Weather {
   background-color: var(--color-background);
   padding: 16px;
 }
-.Weather form {
-  margin-bottom: 20px;
-}
-.Weather h1 {
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 29px;
-}
-.Weather ul {
-  color: var(--color-text-secondary);
-  margin: 0;
-  padding: 0;
-}
-.Weather li {
-  font-size: 16px;
-  font-weight: 100;
-  line-height: 19px;
-  list-style: none;
-}
-.Weather .secondary-text {
-  color: var(--color-text-primary);
-}
 
+.Weather form {
+  margin: 5px 10px 40px 10px;
+}
+.Weather .form-control {
+  background-color: var(--color-bg-headfoot);
+  border: 1px solid var(--color-text-secondary);
+  color: var(--color-text-primary);
+  border-radius: 8px;
+}
+.Weather .form-control::placeholder {
+  color: var(--color-text-secondary);
+  font-weight: 300;
+}
+.Weather .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 8px 3px var(--color-text-secondary);
+  border-color: var(--color-text-secondary);
+}
 .Weather .btn {
   background-color: var(--color-text-secondary);
   color: white;
+  border-radius: 8px;
+  font-weight: 300;
+}
+.Weather .btn:hover {
+  background: transparent;
+  border: 1px solid var(--color-text-secondary);
+}
+
+.WeatherInfo h1 {
+  font-family: "Rajdhani", sans-serif;
+  color: var(--color-text-primary);
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.WeatherInfo .weather-meta {
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 0.75;
 }
 .WeatherInfo canvas {
   margin-right: 10px;
   display: block;
 }
-.Weather .temperature {
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 64px;
+.WeatherInfo .temperature {
+  font-family: "Rajdhani", sans-serif;
+  color: var(--color-text-primary);
+  font-weight: 700;
+  font-size: 84px;
 }
-.Weather .unit {
-  font-size: 16px;
+.WeatherInfo .unit {
+  font-size: 20px;
+  color: var(--color-text-secondary);
   position: relative;
   line-height: 1;
-  top: -32px;
+  top: -30px;
   margin-left: 5px;
+}
+.WeatherInfo ul {
+  color: var(--color-text-secondary);
+  margin: 0;
+  padding: 0;
+}
+.WeatherInfo li {
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+}
+.WeatherInfo .secondary-text {
+  color: var(--color-text-primary);
 }

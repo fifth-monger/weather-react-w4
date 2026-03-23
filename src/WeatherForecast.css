@@ -1,8 +1,31 @@
-.WeatherForecast {
-  text-align: center;
-  margin-top: 20px;
+:root {
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #4db6ac;
+  --color-background: #1a4a4a;
+  --color-bg-headfoot: #0d2b2b;
 }
 
+.WeatherForecast {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.forecast-divider {
+  border: none;
+  border-top: 1px solid var(--color-text-secondary);
+  margin: 0 0 30px;
+  opacity: 0.3;
+}
+
+.WeatherForecast-day {
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  padding-bottom: 6px;
+}
+.WeatherForecast-temperatures {
+  color: var(--color-text-primary);
+  font-size: 16px;
+}
 .WeatherForecast-temperature-min {
   opacity: 0.6;
   margin-left: 5px;

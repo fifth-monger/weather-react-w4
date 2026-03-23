@@ -7,13 +7,12 @@ export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <h1>{props.data.city}</h1>
-      <ul>
-        <li>
-          <FormattedDate date={props.data.date} />
-        </li>
-        <li className="text-capitalize">{props.data.description}</li>
-      </ul>
-      <div className="row mt-3">
+      <p className="weather-meta">
+        <FormattedDate date={props.data.date} />
+        {" · "}
+        <span className="text-capitalize">{props.data.description}</span>
+      </p>
+      <div className="row mt-4 align-items-center">
         <div className="col-6">
           <div className="d-flex align-items-center">
             <div>

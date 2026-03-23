@@ -8,12 +8,12 @@ function App() {
     <div className="App">
       <div className="container">
         <header>
-          <h1 class="brand">STROMATA</h1>
-          <h2 class="brand">weather at a glance</h2>
+          <span className="brand-title">STROMATA</span>
+          <span className="brand-subtitle">weather</span>
         </header>
         <Weather defaultCity="Odem" />
         <footer>
-          This project was coded by{" "}
+          Created by{" "}
           <a
             href="https://victoriagarcia.netlify.app"
             target="_blank"
@@ -21,13 +21,21 @@ function App() {
           >
             Victoria Garcia
           </a>{" "}
-          and is{" "}
+          ·{" "}
           <a
             href="https://github.com/fifth-monger/weather-react-w4"
             target="_blank"
             rel="noreferrer"
           >
-            open-sourced
+            GitHub
+          </a>{" "}
+          ·{" "}
+          <a
+            href="https://stromata.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify
           </a>
         </footer>
       </div>
