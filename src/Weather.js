@@ -3,24 +3,27 @@ import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 import WeatherForecast from "./WeatherForecast";
+import { ThreeDots } from "react-loader-spinner";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    setWeatherData({
-      ready: true,
-      city: response.data.city,
-      temperature: response.data.temperature.current,
-      date: new Date(response.data.time * 1000),
-      feelsLike: response.data.temperature.feels_like,
-      description: response.data.condition.description,
-      icon: response.data.condition.icon,
-      humidity: response.data.temperature.humidity,
-      wind: response.data.wind.speed,
-      coordinates: response.data.coordinates,
-    });
+    setTimeout(() => {
+      setWeatherData({
+        ready: true,
+        city: response.data.city,
+        temperature: response.data.temperature.current,
+        date: new Date(response.data.time * 1000),
+        feelsLike: response.data.temperature.feels_like,
+        description: response.data.condition.description,
+        icon: response.data.condition.icon,
+        humidity: response.data.temperature.humidity,
+        wind: response.data.wind.speed,
+        coordinates: response.data.coordinates,
+      });
+    }, 1500);
   }
   function handleSubmit(event) {
     event.preventDefault();
@@ -62,6 +65,19 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading...";
+    return (
+      <div
+        className="Weather d-flex justify-content-center align-items-center"
+        style={{ minHeight: "200px" }}
+      >
+        <ThreeDots
+          height="80"
+          width="80"
+          color="#4db6ac"
+          ariaLabel="loading"
+          visible={true}
+        />
+      </div>
+    );
   }
 }
