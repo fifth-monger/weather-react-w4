@@ -10,7 +10,7 @@
   opacity: 0.3;
 }
 
-.WeatherForecast-day-label {
+.WeatherForecast-day {
   font-family: "DM Mono", monospace;
   font-size: 13px;
   letter-spacing: 0.08em;
