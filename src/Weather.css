@@ -141,8 +141,8 @@
     margin: 16px 0 0 0;
   }
   .WeatherInfo li {
-    width: 130px;
-    font-size: 14px;
-    padding: 4px 10px;
+    width: 120px;
+    font-size: 13px;
+    padding: 2px 5px;
   }
 }

@@ -27,7 +27,7 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 d-flex justify-content-end">
           <ul>
             <li>
               Feels Like:{" "}
