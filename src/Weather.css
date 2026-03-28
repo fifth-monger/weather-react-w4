@@ -136,8 +136,12 @@
     font-size: 20px;
     top: -30px;
   }
+  .WeatherInfo ul {
+    align-items: flex-start;
+    margin: 16px 0 0 0;
+  }
   .WeatherInfo li {
-    width: 140px;
+    width: 130px;
     font-size: 14px;
     padding: 4px 10px;
   }
