@@ -1,3 +1,9 @@
+:root {
+  --color-text-primary: #f5f5f5;
+  --color-text-secondary: #4db6ac;
+  --color-background: #1a4a4a;
+  --color-bg-headfoot: #0d2b2b;
+}
 .Weather {
   background-color: var(--color-background);
   padding: 16px;
@@ -110,4 +116,29 @@
 }
 .WeatherInfo .secondary-text {
   color: var(--color-text-primary);
+}
+
+@media (max-width: 500px) {
+  .WeatherInfo h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .WeatherInfo .weather-meta {
+    margin-bottom: 8px;
+  }
+  .WeatherInfo .coordinates {
+    letter-spacing: 0.04em;
+  }
+  .WeatherInfo .temperature {
+    font-size: 60px;
+  }
+  .WeatherInfo .unit {
+    font-size: 20px;
+    top: -30px;
+  }
+  .WeatherInfo li {
+    width: 140px;
+    font-size: 14px;
+    padding: 4px 10px;
+  }
 }
