@@ -15,6 +15,7 @@
 .Weather .form-control::placeholder {
   color: var(--color-text-secondary);
   font-weight: 300;
+  font-family: "DM Mono", monospace;
 }
 .Weather .form-control:focus {
   outline: none;
@@ -33,13 +34,16 @@
 }
 
 .WeatherInfo h1 {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Bungee", sans-serif;
   color: var(--color-text-primary);
-  font-size: 38px;
-  font-weight: 600;
+  font-size: 48px;
+  font-weight: 400;
   margin-bottom: 0;
   border-left: 3px solid var(--color-text-secondary);
   padding-left: 12px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(77, 182, 172, 0.6), 0 0 20px rgba(77, 182, 172, 0.3);
+
 }
 .WeatherInfo .weather-meta {
   color: var(--color-text-secondary);
@@ -48,22 +52,35 @@
   line-height: 0.75;
   padding-left: 15px;
 }
+.WeatherInfo .coordinates {
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  opacity: 0.6;
+  letter-spacing: 0.08em;
+  padding-left: 15px;
+  margin-top: 4px;
+}
 .WeatherInfo canvas {
   margin-right: 10px;
   display: block;
 }
 .WeatherInfo .temperature {
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Bungee", sans-serif;
   color: var(--color-text-primary);
-  font-weight: 700;
+  font-weight: 400;
   font-size: 100px;
+  line-height: 1;
+  text-shadow: 0 0 8px rgba(77, 182, 172, 0.6), 0 0 20px rgba(77, 182, 172, 0.3);
+
 }
 .WeatherInfo .unit {
-  font-size: 20px;
+  font-size: 30px;
   color: var(--color-text-secondary);
+  font-family: "Bungee", sans-serif;
   position: relative;
   line-height: 1;
-  top: -30px;
+  top: -48px;
   margin-left: 5px;
 }
 .WeatherInfo .row {

@@ -5,8 +5,8 @@
   --color-bg-headfoot: #1a4a4a;
 }
 body {
-  font-family: "Inter", sans-serif !important;
-  font-weight: 300;
+  font-family: "IBM Plex Sans", sans-serif !important;
+  font-weight: 400;
   background-image:
     linear-gradient(rgba(178, 223, 219, 0.5), rgba(178, 223, 219, 0.5)),
     url("./pixelated-cloud-background.png");
@@ -15,14 +15,32 @@ body {
   background-attachment: fixed;
 }
 
-.container {
-  border: 1px solid var(--color-bg-headfoot);
-  border-radius: 20px;
+.app-container {
+  border-radius: 8px;
   margin: 30px auto;
   display: block;
   padding: 0;
-  overflow: auto;
+  overflow: hidden;
   max-width: 700px;
+  position: relative;
+}
+.app-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, .05) 1.5px,
+    rgba(0, 0, 0, .05) 3px
+  );
+  pointer-events: none;
+  z-index: 10;
+  border-radius: 8px;
 }
 .App header {
   background-color: var(--color-bg-headfoot);
@@ -33,7 +51,6 @@ body {
   justify-content: space-between;
 }
 .brand-title {
-  font-family: "Rajdhani", sans-serif;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 4px;

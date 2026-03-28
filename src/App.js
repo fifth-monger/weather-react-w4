@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="app-container">
         <header>
           <span className="brand-title">STROMATA</span>
           <span className="brand-subtitle">weather</span>

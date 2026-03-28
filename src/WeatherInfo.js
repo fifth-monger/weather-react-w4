@@ -12,6 +12,10 @@ export default function WeatherInfo(props) {
         {" · "}
         <span className="text-capitalize">{props.data.description}</span>
       </p>
+      <p className="coordinates">
+        [ {props.data.coordinates.latitude.toFixed(2)}° N · {props.data.coordinates.longitude.toFixed(2)}° W ]
+      </p>
+
       <div className="row mt-4 align-items-center">
         <div className="col-6">
           <div className="d-flex align-items-center">

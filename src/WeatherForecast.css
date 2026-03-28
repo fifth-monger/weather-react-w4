@@ -18,13 +18,16 @@
 }
 
 .WeatherForecast-day {
+  font-family: "DM Mono", monospace;
+  font-size: 13px;
+  letter-spacing: 0.08em;
   color: var(--color-text-secondary);
-  font-size: 16px;
-  padding-bottom: 6px;
+  margin-bottom: 4px;
 }
 .WeatherForecast-temperatures {
   color: var(--color-text-primary);
   font-size: 16px;
+  font-family: "DM Mono", monospace;
 }
 .WeatherForecast-temperature-min {
   opacity: 0.6;
