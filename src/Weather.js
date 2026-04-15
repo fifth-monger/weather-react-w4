@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
@@ -8,6 +8,10 @@ import { ThreeDots } from "react-loader-spinner";
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
+
+   useEffect(() => {
+    search();
+  }, []);
 
   function handleResponse(response) {
     setTimeout(() => {
@@ -63,8 +67,7 @@ export default function Weather(props) {
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
-  } else {
-    search();
+  }
     return (
       <div
         className="Weather d-flex justify-content-center align-items-center"
@@ -80,4 +83,4 @@ export default function Weather(props) {
       </div>
     );
   }
-}
+
